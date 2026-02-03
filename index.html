@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gewrgegh - FAQ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #e6e6fa;
+        }
+        header, footer {
+            width: 100%;
+            background-color: #4682b4;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            background-color: #5f9ea0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .grid-item {
+            background-color: #f5f5dc;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main class="grid-container">
+        <section class="grid-item">
+            <h2>What is gewrgegh?</h2>
+            <p>gewrgegh is a leading retail business offering a wide range of products and services.</p>
+        </section>
+        <section class="grid-item">
+            <h2>How do I place an order?</h2>
+            <p>You can place an order through our website or mobile app.</p>
+        </section>
+        <section class="grid-item">
+            <h2>What are the delivery options?</h2>
+            <p>We offer standard and express delivery options to suit your needs.</p>
+        </section>
+        <section class="grid-item">
+            <h2>How can I track my order?</h2>
+            <p>Track your order via the tracking link sent to your email after purchase.</p>
+        </section>
+        <section class="grid-item">
+            <h2>Can I return or exchange an item?</h2>
+            <p>Yes, we have a 30-day return policy for unused items in their original packaging.</p>
+        </section>
+        <section class="grid-item">
+            <h2>How do I contact customer support?</h2>
+            <p>Contact us via email, phone, or our online chat for assistance.</p>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-phone"></i>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 gewrgegh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
